@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Typography } from '@mui/material';
 
-const skills = ["Python", "Backend", "Microservices", "Neo4j", "Elasticsearch", "Mongodb", "Flask/Django", "Kafka", "React", "Kubernetes"];
+const skills = ["Python", "Backend", "Microservices", "Neo4j", "Elasticsearch", "MongoDB", "Flask ", "Django", "Kafka", "React", "Kubernetes"];
 
 const TypingEffect = () => {
   const [displayedText, setDisplayedText] = useState('');

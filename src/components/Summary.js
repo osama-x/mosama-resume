@@ -1,28 +1,39 @@
 import React from 'react';
-import { Box, Typography, Grid, Chip, Divider, Link } from '@mui/material';
+import { Box, Typography, Grid, Chip, Divider, Link, Card, CardContent, CardActions } from '@mui/material';
 
 // Technology data
 const technologies = [
-  'Backend Technologies','Full-Stack', 'Python', 'REST', 'Flask', 'Django', 'Neo4j', 'MongoDB', 'Redis', 'Elasticsearch', 'PostgreSQL',
+  'Backend Technologies', 'Full-Stack', 'Python', 'REST', 'Flask', 'Django', 'Neo4j', 'MongoDB', 'Redis', 'Elasticsearch', 'PostgreSQL',
   'Shell Scripting', 'Google Cloud Platform', 'Kubernetes', 'Docker', 'Apache Kafka', 'Jira',
   'GraphQL', 'Email Processing (Sendgrid)', 'React', 'Linux'
 ];
 
 const Summary = () => {
   return (
-    <Box sx={{ p: 3, position:'fixed',}}>
-      {/* About Section */}
+    <Box sx={{ p: 3, position: 'fixed' }}>
       <Typography variant="h4" gutterBottom>
-        About Me
+        About
       </Typography>
-      <Typography variant="body1" paragraph>
-        Muhammad Osama is a highly skilled Senior Back-End Engineer with over four years of experience in developing, deploying, and maintaining scalable and robust back-end systems. He has a proven track record in Python development, specializing in microservices architecture on Google Cloud Platform (GCP) using Kubernetes and Docker. Osama excels in creating efficient, message-driven APIs and services, and he possesses strong expertise in various databases, including Neo4j, MongoDB, Elasticsearch, and PostgreSQL. His background also includes significant experience in cybersecurity and vulnerability management, ensuring secure and reliable software solutions. Known for his leadership capabilities, Osama has led back-end teams to successful project completions, seamlessly collaborating with clients, UX designers, and front-end developers. He is passionate about problem-solving and continuously enhancing his skills to deliver high-quality software solutions.
-      </Typography>
+      <Card sx={{ mb: 3 }}>
+        <CardContent>
+          <Typography variant="body1" paragraph> 
+              Passionate Full-Stack Developer with 5 years of Python mastery. Developed full scale backend
+              systems utilizing microservices architecture for back-end, making architectural and business logic
+              decisions, working on front-end technologies and exploring DevOps and data engineering for making
+              robust systems. Leading back-end teams and collaborating effectively across projects. Designed and
+              deployed Python-powered microservices using Kubernetes and Docker on Google Cloud Platform. Data
+              expertise in NoSQL (Neo4j, MongoDB, Elasticsearch) and SQL. Worked on cyber security related
+              products and vulnerability management. Experience with direct client communication and resolving the
+              payment processing related issues.
+          </Typography>
+        </CardContent>
+      </Card>
+
       <Divider sx={{ my: 3 }} />
       
       {/* Technologies Section */}
-      <Typography variant="h4" gutterBottom sx={{mb: 5}}>
-        Experience
+      <Typography variant="h4" gutterBottom sx={{ mb: 5 }}>
+        Expertise
       </Typography>
       <Grid container spacing={2} sx={{ justifyContent: 'center' }}>
         {technologies.map((tech, index) => (
