@@ -60,7 +60,7 @@ const Summary = () => {
         ))}
       </Grid>
       <Box sx={{ textAlign: 'right', mt: 3 }}>
-        <Link href="/technologies" underline="none" sx={{ fontSize: '1rem', color: '#757575' }}>
+        <Link href="/skills" underline="none" sx={{ fontSize: '1rem', color: '#757575' }}>
           more in Technologies Section
         </Link>
       </Box>
